@@ -1,5 +1,5 @@
 # ee186_all
-new repo for the rest of labs for Stanford's ee186 course (please never make me do this again)!
+new repo for the rest of labs for Stanford's ee186 course (please never make me do this again (i'm kidding this class is fun (but i've never a datasheet this deeply ever)))!
 
 ## LAB 2
 **1. Explain how external interrupts work.**
