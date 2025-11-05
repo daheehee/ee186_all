@@ -1,9 +1,23 @@
 # ee186_all
 new repo for the rest of labs for Stanford's ee186 course (please never make me do this again (i'm kidding this class is fun (but i've never a datasheet this deeply ever)))!
 
+## LAB 4
+
+**1. What are the different bit resolutions can you set the ADC? What is the maximum sampling rate at each of these resolutions? Where did you find this information in the datasheet?**
+A: 12, 10, 8 or 6-bit configurable resolution according to ADC main feature section. Maximum sample rate for each resolution is 8000 hz, 9230 hz, 10909 hz, and 13333 hz respectively. 
+
+**2. Why do you need a voltage divider circuit? What would happen if the photodiode is directly connected to the board?**
+A: Without the voltage divider, all of the voltage will drop across the one resistor, not really indicating the change of resistance across the photodiode (or whatever resistor we are using). The photodiode would just have 3v3 drop constantly.
+
+**3. If B = 9, what is Vout? Express your answer in terms of Vref . Use the DAC mode that provides the best resolution available on your MCU (refer to the data sheet).**
+A: v_out = 9/2^(12) * V_ref= 0.002197265625 * V_ref
+
+**4. How does the sampling rate of the DAC affect the quality of the output waveform? What are the differences in sound perception between sine, square, and sawtooth waves? Why do we need a capacitor in the signal path when sending an audio signal to a speaker or earphones?**
+A: The DAC sampling rate impacts how smooth the sound wave will be (smaller sampling rate means choppier audio). Sine waves sound like normal notes, square waves a sharp, and sawtoths are loud and buzzy. A capacitor allows us to filter the square and sawtooth waves to have a smooth sine wave equivalent that emulates a normal sound wave. 
+
 ## LAB 3
 
-**1. What is the I2C addresses of the accelerometer and magnetometer? Represent the r/w bit using b.**
+**1. What is the I2C addresses of the accelerometer and magnetometer? Represent the r/w bit using b.** 
 A: 0b0011001 for accelerometer and 0b0011110 for magnotometer 
 
 
